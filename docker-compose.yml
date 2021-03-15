@@ -1,0 +1,6 @@
+services:
+  fastlane:
+    container_name: fastlane
+    build:
+      context: .
+      dockerfile: ./Dockerfile
