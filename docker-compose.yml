@@ -1,6 +1,9 @@
 services:
   fastlane:
     container_name: fastlane
+    network_mode: host
     build:
       context: .
       dockerfile: ./Dockerfile
+    volumes:
+      - ./:usr/src/cicd
